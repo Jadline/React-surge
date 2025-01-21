@@ -1,6 +1,7 @@
 import './TitleCards.css'
 import cards_data from '../../assets/cards/Cards_data'
 import { useRef,useEffect,useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,11 +27,11 @@ function TitleCards({title,category}){
             const res =  await fetch(`https://api.themoviedb.org/3/movie/${category ? category : 'now_playing'}?language=en-US&page=1`, options)
             if(!res.ok) throw new Error ('There was an error fetching the data')
             const data = await res.json()
-            console.log(data)
+            // console.log(data)
             setApiData(data.results)
         }
         fetchMovies()
-    },[])
+    },[category])
     useEffect(()=> {
             const currentRef = cardsRef.current;
             currentRef.addEventListener('wheel', handleWheel);
@@ -44,10 +45,10 @@ function TitleCards({title,category}){
             <h2>{title? title : "Popular on Netflix"}</h2>
             <div className="card-list" ref={cardsRef}>
                 {apiData.map((card,index) => {
-                    return <div className="card" key={index}>
+                    return <Link to={`/player/${card.id}`} className="card" key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500`+ card.backdrop_path} alt="" />
                         <p>{card.original_title}</p>
-                    </div>
+                    </Link>
 
                 })}
             </div>

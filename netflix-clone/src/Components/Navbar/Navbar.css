@@ -72,3 +72,6 @@
     cursor : pointer;
 
 }
+.nav-dark {
+    background-color : black; 
+}
