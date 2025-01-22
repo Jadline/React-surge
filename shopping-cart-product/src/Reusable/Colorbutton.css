@@ -1,0 +1,33 @@
+.product-color button span{
+    /* background-color : red; */
+    border-radius : 50%;
+    display : block;
+    max-width: 1rem;
+    max-height : 1rem;
+    padding : .8rem;
+}
+.product-color button {
+    border-radius : 50%;
+    background-color : transparent ;
+    border: .1rem solid #fff;
+    padding : .5rem;
+
+}
+.product-color button:first-child {
+    margin-right :.8rem;
+}
+.red {
+    background-color : red;
+    
+
+}
+.blue {
+    background-color : blue;
+}
+
+ .product-info p:last-child {
+    margin-bottom : 1.3rem;
+ }
+.product-color {
+    padding-block : 2rem;
+}

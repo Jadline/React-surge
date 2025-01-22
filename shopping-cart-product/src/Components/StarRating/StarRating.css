@@ -1,0 +1,9 @@
+img {
+    display : block;
+    max-width : 2rem;
+
+}
+.product-rating {
+    display : flex;
+    padding-block: 1rem;
+}

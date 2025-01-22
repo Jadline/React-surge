@@ -1,0 +1,118 @@
+.product-modal {
+    display : flex;
+    justify-content :center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y : auto;
+    z-index : 90;
+    max-height: 100%;
+    background-color : red;
+    
+    
+    
+    
+}
+
+.more-info {
+    font-size : 2rem;
+    background-color :#fff;
+    color:#000;
+    padding : 2%;
+}
+.product-image {
+    display : block;
+    max-width : 100%;
+    object-fit : cover;
+    height : 100%;
+    
+    
+}
+.product-data-image {
+    max-width : 50%;
+   
+}
+.more-info h1{
+    margin-bottom: 1.2rem;
+}
+.product-price {
+    font-weight : 600;
+    margin-bottom : 1.2rem;
+}
+.comp-info {
+    margin-block : 1.6rem;
+}
+.product-size {
+    padding-block : 2rem;
+    margin-bottom : 1.4rem;
+}
+.product-size span {
+    max-width : 4rem;
+    border : .2rem solid #000;
+    padding : .9rem;
+}
+.product-size span:first-child {
+    margin-right : 1rem;
+}
+.product-material {
+    display : flex;
+    padding-block: 2rem;
+}
+.product-material span {
+    display : block;
+    padding : .5rem 2rem;
+    border : .2rem solid #000;
+    
+}
+.product-material span:first-child {
+    margin-right : 1rem;
+
+}
+.counter {
+    /* display : flex; */
+    margin-right : 2rem;
+    border : .2rem solid #000;
+    /* padding-inline : 2rem; */
+    display : flex;
+    justify-content : space-between;
+    gap : 1rem;
+    align-items : center;
+    padding-inline : .5rem;
+}
+.counter button{
+    padding : .3rem .5rem;
+    background-color : transparent;
+    font-size:1.8rem;
+    border : none;
+    outline : none;
+}
+
+.product-check {
+    display : flex
+   
+}
+.product-check .availability {
+    background-color : black;
+    color :#fff;
+    padding : 1rem 1.2rem;
+    flex : 1;
+    font-size : 1.6rem;
+    font-weight : 600;
+}
+.check-delivery {
+    display : flex;
+    margin-block : 2rem;
+    gap:.8rem;
+}
+.vendor {
+    font-size : 1.4rem;
+    margin-bottom : 1.2rem;
+}
+.details {
+    font-size : 1.2rem;
+    text-decoration: underline;
+}
